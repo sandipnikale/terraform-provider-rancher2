@@ -245,19 +245,6 @@ resource "rancher2_app_v2" "rancher-logging" {
 }
 ```
 
-* Deploy Rancher Longhorn
-
-```hcl
-resource "rancher2_app_v2" "longhorn" {  
-  cluster_id = "<CLUSTER_ID>"
-  name = "rancher-longhorn"
-  namespace = "longhorn-system"
-  repo_name = "rancher-charts"
-  chart_name = "longhorn"
-  chart_version = "1.0.201"
-}
-```
-
 * `longhorn` - Deploy Rancher Longhorn
 
 ```hcl
